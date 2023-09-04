@@ -20,17 +20,17 @@ const Navbar = () => {
       const TopProject: number | undefined =
         Project?.getBoundingClientRect().top;
 
-      if (TopHome && TopHome < 10) {
+      if (TopHome && TopHome < 100) {
         setHome(true);
         setAbout(false);
         setProject(false);
       }
-      if (TopAbout && TopAbout < 10) {
+      if (TopAbout && TopAbout < 100) {
         setHome(false);
         setAbout(true);
         setProject(false);
       }
-      if (TopProject && TopProject < 10) {
+      if (TopProject && TopProject < 100) {
         setHome(false);
         setAbout(false);
         setProject(true);
@@ -75,7 +75,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="rounded-full border px-4 py-2 font-semibold text-[#68696E] hover:text-[#2493d4]">
+      <button className="border-gradient  px-4 py-1 font-semibold text-[#68696E] hover:text-[#2493d4]">
         <a href="#contact">Contact</a>
       </button>
     </nav>

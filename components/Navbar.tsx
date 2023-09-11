@@ -52,7 +52,7 @@ const Navbar = () => {
         priority
         className="h-[65px] w-auto object-contain"
       />
-      <ul>
+      <ul className="hidden md:block">
         <li className="space-x-5 font-semibold uppercase">
           <a
             href="#home"
@@ -75,7 +75,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="border-gradient  px-4 py-1 font-semibold text-[#68696E] hover:text-[#2493d4]">
+      <button className="border-gradient hidden px-4 py-1 font-semibold  text-[#68696E] hover:text-[#2493d4] md:block ">
         <a href="#contact">Contact</a>
       </button>
     </nav>

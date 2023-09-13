@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
-const Navbar = () => {
+const Navbar = (): React.JSX.Element => {
   const [home, setHome] = useState<boolean>(true);
   const [about, setAbout] = useState<boolean>(false);
   const [project, setProject] = useState<boolean>(false);

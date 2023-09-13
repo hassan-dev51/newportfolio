@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = (): React.JSX.Element => {
   return (
     <section
       id="home"

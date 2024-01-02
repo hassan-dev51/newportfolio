@@ -2,11 +2,11 @@ import TypingText from "./TypingText";
 
 const About = (): React.JSX.Element => {
   return (
-    <section id="about">
+    <section id="about" className="pt-12">
       <TypingText />
 
       <div className="flex px-4 py-8">
-        <p className="p-8 text-justify text-xl text-[#68696e]">
+        <p className="p-8 text-start text-xl text-[#68696e] md:text-justify">
           <span className="font-bold text-[#2493d4]">
             Web Application Developer
           </span>{" "}

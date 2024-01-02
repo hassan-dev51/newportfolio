@@ -43,7 +43,7 @@ const Navbar = (): React.JSX.Element => {
     };
   }, []);
   return (
-    <nav className="fixed top-0 flex w-full items-center justify-between px-5 py-1">
+    <nav className="fixed top-0 z-10 flex w-full items-center justify-between px-5 py-1">
       <Image
         src={"/images/logo.png"}
         alt="logo"
@@ -52,7 +52,7 @@ const Navbar = (): React.JSX.Element => {
         priority
         className="h-[65px] w-auto object-contain"
       />
-      <ul className="hidden md:block">
+      <ul className="mr-8 hidden md:block">
         <li className="space-x-5 font-semibold uppercase">
           <a
             href="#home"
@@ -72,12 +72,18 @@ const Navbar = (): React.JSX.Element => {
           >
             Projects
           </a>
+          <a
+            href="#contact"
+            className={project ? `text-[#2493D4]` : `text-[#68696E]`}
+          >
+            Contact
+          </a>
         </li>
       </ul>
-
+      {/* 
       <button className="border-gradient hidden px-4 py-1 font-semibold  text-[#68696E] hover:text-[#2493d4] md:block ">
         <a href="#contact">Contact</a>
-      </button>
+      </button> */}
     </nav>
   );
 };

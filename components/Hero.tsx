@@ -1,21 +1,20 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import StarWrapper from "@/hoc/StarWrapper";
+import { MotionDiv } from "./MotionDiv";
 
-const Hero = (): React.JSX.Element => {
+const Hero = () => {
   return (
     <section
       id="home"
       className="flex flex-col-reverse items-center justify-center  overflow-hidden px-6 pb-28 pt-20 md:flex-row md:items-end md:justify-around md:px-4"
     >
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0 }}
         whileInView={{
           opacity: [0, 1],
           x: [-200, 0],
-          transition: { ease: "easeInOut", duration: 1 },
+          transition: { ease: "easeInOut", duration: 0.5 },
         }}
         viewport={{ once: false }}
       >
@@ -24,7 +23,7 @@ const Hero = (): React.JSX.Element => {
           Full stack Next JS Developer
         </p>
 
-        <div className="flex flex-col gap-4 md:flex-row ">
+        <div className="z-10 flex flex-col gap-4 md:flex-row">
           <Link
             href="https://github.com/hassan-dev51"
             className="flex items-center gap-3 rounded-lg bg-[#68696e] px-6 py-2"
@@ -53,28 +52,28 @@ const Hero = (): React.JSX.Element => {
             LinkedIn
           </Link>
         </div>
-      </motion.div>
-      <motion.div
+      </MotionDiv>
+      <MotionDiv
         initial={{ opacity: 0 }}
         whileInView={{
           opacity: [0, 1],
           x: [200, 0],
-          transition: { ease: "easeInOut", duration: 1, delayChildren: 1.5 },
+          transition: { ease: "easeInOut", duration: 0.5, delayChildren: 1 },
         }}
       >
-        <div className="md:h-[400px]">
+        <div className="mix-blend-overlay md:h-[400px] md:translate-y-6 md:scale-110">
           <Image
             src={"/images/hero.png"}
             alt="hero-image"
             width={500}
             height={500}
             priority
-            className="h-[400px] w-auto object-contain"
+            className="-z-10 h-[400px] w-auto  object-contain "
           />
         </div>
-      </motion.div>
+      </MotionDiv>
     </section>
   );
 };
 
-export default Hero;
+export default StarWrapper(Hero);

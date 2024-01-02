@@ -1,6 +1,5 @@
 "use client";
 
-import { staggerContainer } from "@/utils";
 import { motion } from "framer-motion";
 
 type Props = {

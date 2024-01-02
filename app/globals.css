@@ -6,7 +6,7 @@ body {
   background-color: #121417;
   color: #efefef;
 }
-.border-gradient {
+/* .border-gradient {
   border: 5px solid transparent;
   border-image: conic-gradient(
       from 0deg,
@@ -14,4 +14,4 @@ body {
       #68696e 200deg 360deg
     )
     1;
-}
+} */

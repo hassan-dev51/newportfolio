@@ -8,9 +8,11 @@ export default function Home() {
         <Hero />
         <StarCanvas />
       </div>
-      <About />
-      <Project />
-      <Tech />
+      <div className="px-12">
+        <About />
+        <Tech />
+        <Project />
+      </div>
     </>
   );
 }

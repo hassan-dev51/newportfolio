@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hassan Ali",
+  title: "Hassan Ali | Portfolio",
   description:
     "i am full stack next js developer. i build custom and business type web application using typescript and modren trends",
 };

@@ -18,13 +18,13 @@ const Text = ({ title }: Props) => (
             opacity: 1,
             y: 0,
             transition: {
-              type: "tween",
+              type: "spring",
               ease: "easeIn",
             },
           },
         }}
         key={index}
-        className="bg-gradient-to-r from-[#2493d4] to-[#68696e] bg-clip-text text-4xl font-bold text-transparent"
+        className="text-4xl font-bold text-[#68696E]"
       >
         {letter === " " ? "\u00A0" : letter}
       </motion.span>

@@ -1,49 +1,26 @@
 "use client";
-
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Navbar = (): React.JSX.Element => {
-  const [home, setHome] = useState<boolean>(true);
-  const [about, setAbout] = useState<boolean>(false);
-  const [project, setProject] = useState<boolean>(false);
-
+  const [navColor, setNavColor] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 150) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
+    }
+  };
   useEffect(() => {
-    const handleScroll = () => {
-      const Home: HTMLElement | null = document.getElementById("home");
-      const TopHome: number | undefined = Home?.getBoundingClientRect().top;
-
-      const About: HTMLElement | null = document.getElementById("about");
-      const TopAbout: number | undefined = About?.getBoundingClientRect().top;
-
-      const Project: HTMLElement | null = document.getElementById("project");
-      const TopProject: number | undefined =
-        Project?.getBoundingClientRect().top;
-
-      if (TopHome && TopHome < 100) {
-        setHome(true);
-        setAbout(false);
-        setProject(false);
-      }
-      if (TopAbout && TopAbout < 100) {
-        setHome(false);
-        setAbout(true);
-        setProject(false);
-      }
-      if (TopProject && TopProject < 100) {
-        setHome(false);
-        setAbout(false);
-        setProject(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
   }, []);
   return (
-    <nav className="fixed top-0 z-10 flex w-full items-center justify-between px-5 py-1">
+    <nav
+      className={`fixed top-0 z-10 flex w-full items-center justify-between transition-all ease-in-out ${
+        navColor && `bg-black/70`
+      } px-5 py-1 ${navColor && `backdrop-blur-md `}`}
+    >
       <Image
         src={"/images/logo.png"}
         alt="logo"
@@ -53,31 +30,11 @@ const Navbar = (): React.JSX.Element => {
         className="h-[65px] w-auto object-contain"
       />
       <ul className="mr-8 hidden md:block">
-        <li className="space-x-5 font-semibold uppercase">
-          <a
-            href="#home"
-            className={home ? `text-[#2493D4]` : `text-[#68696E]`}
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className={about ? `text-[#2493D4]` : `text-[#68696E]`}
-          >
-            About
-          </a>
-          <a
-            href="#project"
-            className={project ? `text-[#2493D4]` : `text-[#68696E]`}
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className={project ? `text-[#2493D4]` : `text-[#68696E]`}
-          >
-            Contact
-          </a>
+        <li className="space-x-5 font-semibold uppercase text-[#68696e]">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Projects</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       {/* 

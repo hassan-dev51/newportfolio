@@ -7,4 +7,8 @@ export { default as mongodb } from "./mongodb.png";
 export { default as react } from "./reactjs.png";
 export { default as redux } from "./redux.png";
 export { default as docker } from "./docker.png";
+export { default as nodejs } from "./nodejs.png";
 export { default as git } from "./git.png";
+export { default as python } from "./python-5.svg";
+export { default as flask } from "./flask.svg";
+export { default as nextjs } from "./nextjs.svg";

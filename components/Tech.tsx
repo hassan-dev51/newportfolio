@@ -1,22 +1,24 @@
 import { skills } from "@/constants";
 import Image from "next/image";
-import React from "react";
-
-type Props = {};
-
 const Tech = () => {
   return (
     <section id="tect">
       <h2 className="text-4xl font-bold text-[#68696E]">My Skills</h2>
-      <div className="mt-16 flex flex-wrap gap-12">
+      <div className="my-16 flex flex-wrap justify-center gap-12">
         {skills.map((skill) => (
-          <div key={skill.name}>
-            <div>
+          <div
+            key={skill.name}
+            className="block-container h-20 w-20 cursor-pointer px-16"
+          >
+            <div className="btn-back flex items-center justify-center rounded-xl">
+              <span>{skill.skill}%</span>
+            </div>
+            <div className="btn-front flex items-center justify-center rounded-xl">
               <Image
                 src={skill.imageUrl}
                 alt={skill.name}
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="h-1/2 w-1/2 object-contain"
               />
             </div>

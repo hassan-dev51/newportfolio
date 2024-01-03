@@ -12,3 +12,6 @@ export { default as git } from "./git.png";
 export { default as python } from "./python-5.svg";
 export { default as flask } from "./flask.svg";
 export { default as nextjs } from "./nextjs.svg";
+export { default as panaverse } from "./panaverse.png";
+export { default as piaic } from "./piaic.png";
+export { default as pricing } from "./pricing.png";

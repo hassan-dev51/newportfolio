@@ -8,6 +8,9 @@ import {
   mongodb,
   nextjs,
   nodejs,
+  panaverse,
+  piaic,
+  pricing,
   python,
   react,
   redux,
@@ -100,5 +103,77 @@ export const skills = [
     name: "MongoDB",
     type: "Database",
     skill: "30",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    image: panaverse,
+    githublink:
+      "https://github.com/hassan-dev51/Assignment01_Nextjs_TodoApp/tree/main/panaverse",
+    description: `The Panaverse DAO website, an immersive platform encapsulating a wealth of detailed documentation. Crafted using Next.js 13 and the Chakra UI component library, this landing page seamlessly integrates cutting-edge technologies for a dynamic and user-friendly experience.`,
+    url: "https://panaverse-lite.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+    ],
+  },
+  {
+    id: 2,
+    image: piaic,
+    githublink: "https://github.com/hassan-dev51/piaic",
+    description: `The PIAIC landing page, enriched with dynamic visual elements, is a testament to my design prowess and coding proficiency. Crafted using the Framer Motion library, the page seamlessly integrates captivating animations and transitions, enhancing the overall user experience.`,
+    url: "https://piaic-lite.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "FramerMotion",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 3,
+    image: pricing,
+    githublink:
+      "https://github.com/hassan-dev51/Assignment01_Nextjs_TodoApp/tree/main/pricing",
+    description: `Elevate your design prowess with a Figma project seamlessly implemented using Next.js and Chakra UI. This endeavor encapsulates a harmonious fusion of creativity and functionality, showcasing my ability to craft visually appealing and responsive interfaces.`,
+    url: "https://pricing-ui-assignment.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "FramerMotion",
+        color: "tag-green",
+      },
+    ],
   },
 ];

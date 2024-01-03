@@ -44,3 +44,19 @@ body {
 .block-container:hover > .btn-front {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-50deg) rotateY(-50deg);
 }
+.glassmorphism {
+  background: rgba(8, 116, 239, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.tag-red {
+  color: red;
+}
+.tag-blue {
+  color: rgb(0, 204, 255);
+}
+.tag-green {
+  color: green;
+}

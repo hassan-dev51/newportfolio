@@ -1,6 +1,9 @@
 import {
+  carhub,
+  covid,
   css,
   docker,
+  expense,
   flask,
   git,
   html,
@@ -17,6 +20,26 @@ import {
   tailwind,
   typescript,
 } from "@/public/images";
+import { StaticImageData } from "next/image";
+export interface skillTypes {
+  imageUrl: StaticImageData;
+  name: string;
+  type: string;
+  skill: string;
+}
+export interface projectTypes {
+  id: number;
+  image: StaticImageData;
+  githublink: string;
+  description: string;
+  url: string;
+  tags: {
+    id: number;
+    framework: string;
+    color: string;
+  }[];
+}
+export type tags = { id: number; color: string; framework: string };
 
 export const skills = [
   {
@@ -172,6 +195,79 @@ export const projects = [
       {
         id: 3,
         framework: "FramerMotion",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 4,
+    image: expense,
+    githublink:
+      "https://github.com/hassan-dev51/Q2-Projects/tree/main/expense_app",
+    description: `Effortlessly manage daily transactions with my Next.js application designed for seamless expense tracking. Utilizing the power of Chart.js and Redux, this platform ensures a user-friendly experience, allowing you to stay organized and informed about your financial activities. Experience the convenience of daily expense tracking, tailored for practical and efficient use in your everyday life.`,
+    url: "https://expense-lite.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "Redux",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 5,
+    image: covid,
+    githublink: "https://github.com/hassan-dev51/covid-19",
+    description: `Stay informed about the current global coronavirus situation with this application, providing real-time updates on COVID-19 cases worldwide. This intuitive platform adheres to the principle of delivering accurate and up-to-date information, enabling users to stay vigilant and aware of the ongoing pandemic.`,
+    url: "https://covid-19-lite.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "ChartJs",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 6,
+    image: carhub,
+    githublink: "https://github.com/hassan-dev51/covid-19",
+    description: `Stay informed about the current global coronavirus situation with this application, providing real-time updates on COVID-19 cases worldwide. This intuitive platform adheres to the principle of delivering accurate and up-to-date information, enabling users to stay vigilant and aware of the ongoing pandemic.`,
+    url: "https://carhub-lake.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "ChartJs",
         color: "tag-green",
       },
     ],

@@ -16,32 +16,30 @@ const Navbar = (): React.JSX.Element => {
     window.addEventListener("scroll", changeBackground);
   }, []);
   return (
-    <nav
-      className={`fixed top-0 z-10 flex w-full items-center justify-between transition-all ease-in-out ${
-        navColor && `bg-black/70`
-      } px-5 py-1 ${navColor && `backdrop-blur-md `}`}
-    >
-      <Image
-        src={"/images/logo.png"}
-        alt="logo"
-        width={380}
-        height={380}
-        priority
-        className="h-[65px] w-auto object-contain"
-      />
-      <ul className="mr-8 hidden md:block">
-        <li className="space-x-5 font-semibold uppercase text-[#68696e]">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Projects</a>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      {/* 
-      <button className="border-gradient hidden px-4 py-1 font-semibold  text-[#68696E] hover:text-[#2493d4] md:block ">
-        <a href="#contact">Contact</a>
-      </button> */}
-    </nav>
+    <header className="sticky top-0 z-[9999] w-full">
+      <nav
+        className={`flex items-center justify-between transition-all ease-in-out ${
+          navColor && `bg-black/70`
+        } px-5 py-1 ${navColor && `backdrop-blur-md `}`}
+      >
+        <Image
+          src={"/images/logo.png"}
+          alt="logo"
+          width={380}
+          height={380}
+          priority
+          className="h-[65px] w-auto object-contain"
+        />
+        <ul className="mr-8 hidden md:block">
+          <li className="space-x-5 font-semibold uppercase text-[#68696e]">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

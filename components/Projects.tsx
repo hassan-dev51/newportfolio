@@ -1,4 +1,4 @@
-import { projects } from "@/constants";
+import { projectTypes, projects, tags } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,8 +15,8 @@ const Projects = () => {
         technologies, and efficiently overseeing project management.
       </p>
       <div className=" my-12 flex flex-wrap justify-center  gap-6">
-        {projects.map((currElem) => (
-          <div className="glassmorphism max-w-[400px]" key={currElem.id}>
+        {projects.map((currElem: projectTypes) => (
+          <div className="glassmorphism max-w-[370px]" key={currElem.id}>
             <div className="relative rounded-md p-3">
               <Image
                 src={currElem.image}
@@ -50,7 +50,7 @@ const Projects = () => {
               </p>
 
               <p className="mt-6 flex flex-row gap-5">
-                {currElem.tags.map((tag) => (
+                {currElem.tags.map((tag: tags) => (
                   <span key={tag.id} className={tag.color}>
                     {`#${tag.framework}`}
                   </span>

@@ -15,3 +15,6 @@ export { default as nextjs } from "./nextjs.svg";
 export { default as panaverse } from "./panaverse.png";
 export { default as piaic } from "./piaic.png";
 export { default as pricing } from "./pricing.png";
+export { default as expense } from "./expense.png";
+export { default as covid } from "./covid.png";
+export { default as carhub } from "./carhub.png";

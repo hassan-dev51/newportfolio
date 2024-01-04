@@ -1,11 +1,11 @@
-import { skills } from "@/constants";
+import { skillTypes, skills } from "@/constants";
 import Image from "next/image";
 const Tech = () => {
   return (
     <section id="tect">
       <h2 className="text-4xl font-bold text-[#68696E]">My Skills</h2>
       <div className="my-16 flex flex-wrap justify-center gap-12">
-        {skills.map((skill) => (
+        {skills.map((skill: skillTypes) => (
           <div
             key={skill.name}
             className="block-container h-20 w-20 cursor-pointer px-16"

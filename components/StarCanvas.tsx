@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, Suspense } from "react";
-// @ts-ignore
+
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Preload, Points, PointMaterial } from "@react-three/drei";
 // @ts-ignore
@@ -32,7 +32,7 @@ const Star = (props: any) => {
 };
 const StarCanvas = () => {
   return (
-    <div className="absolute inset-0 z-[-1] h-auto w-full">
+    <div className="absolute inset-0 -z-10 h-auto w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Star />

@@ -34,8 +34,8 @@ const PaginationCard = () => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 1.25,
-        delay: index * 0.3,
+        duration: 0.5,
+        delay: index * 0.15,
       },
     },
   });
@@ -53,10 +53,10 @@ const PaginationCard = () => {
   });
   return (
     <motion.section
-      variants={staggerContainer(0.2, 0.5)}
+      variants={staggerContainer(0.25, 0.25)}
       initial="hidden"
       whileInView="show"
-      transition={{ delay: 1, ease: "easeInOut", duration: 1 }}
+      transition={{ delay: 0.5, ease: "easeInOut", duration: 1 }}
     >
       <div className=" my-12 flex flex-wrap justify-center  gap-6">
         {currentCard.map((currElem: projectTypes) => (
@@ -97,17 +97,17 @@ const PaginationCard = () => {
               >
                 View
               </Link>
-              <p className="mt-3 h-[150px] overflow-y-clip p-1 text-justify text-sm hover:overflow-y-auto">
+              <p className="custom-scrollbar mt-3 h-[150px] overflow-y-clip p-1 text-justify text-sm hover:overflow-y-auto">
                 {currElem.description}
               </p>
 
-              <p className="mt-6 flex flex-row gap-5">
+              <div className="mt-6 flex flex-row flex-wrap gap-2 md:gap-5">
                 {currElem.tags.map((tag: tags) => (
                   <span key={tag.id} className={tag.color}>
                     {`#${tag.framework}`}
                   </span>
                 ))}
-              </p>
+              </div>
             </div>
           </motion.div>
         ))}

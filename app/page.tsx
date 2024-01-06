@@ -7,11 +7,11 @@ export default function Home() {
         <Navbar />
         <Hero />
         <StarCanvas />
-      </div>
-      <div className="px-12">
-        <About />
-        <Tech />
-        <Project />
+        <div className="px-12">
+          <About />
+          <Tech />
+          <Project />
+        </div>
       </div>
     </>
   );

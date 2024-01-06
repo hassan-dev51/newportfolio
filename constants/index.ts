@@ -6,7 +6,9 @@ import {
   expense,
   flask,
   git,
+  hackathon,
   html,
+  intern,
   javascript,
   mongodb,
   nextjs,
@@ -14,6 +16,7 @@ import {
   panaverse,
   piaic,
   pricing,
+  prompt,
   python,
   react,
   redux,
@@ -130,6 +133,78 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    id: 7,
+    image: hackathon,
+    githublink: "https://github.com/hassan-dev51/hackathon",
+    description: `Explore a seamless online shopping experience with our e-commerce site, meticulously crafted for a premium brand. Powered by cutting-edge technologies, our platform is built using Next.js and Redux for optimal performance and state management. Enjoy secure transactions with integrated Stripe payment functionality`,
+    url: "https://hackathon-iota.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Redux JS",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "Stripe",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 8,
+    image: prompt,
+    githublink: "https://github.com/hassan-dev51/prompt",
+    description: `Discover a vibrant online community on our Full Stack Application, providing a space for individuals to share their thoughts and experiences. Built with the power of Next.js, MongoDB for robust data storage, and styled with the sleek simplicity of Tailwind CSS`,
+    url: "https://prompt-red.vercel.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "MongoDB",
+        color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 9,
+    image: intern,
+    githublink: "https://github.com/hassan-dev51/internship",
+    description: `Photoshop design project, a brand's visual essence translated into a seamless website. Built with simple HTML, CSS, and JavaScript, the template offers a dynamic and responsive user experience, showcasing the brand's identity through minimalistic elegance and thoughtful interactivity`,
+    url: "https://internshiptesting.netlify.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "Next JS",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "Tailwind",
+        color: "tag-blue",
+      },
+      {
+        id: 3,
+        framework: "MongoDB",
+        color: "tag-green",
+      },
+    ],
+  },
   {
     id: 1,
     image: panaverse,

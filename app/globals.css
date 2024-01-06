@@ -60,3 +60,22 @@ body {
 .tag-green {
   color: green;
 }
+/* Your regular Tailwind CSS styles go here */
+
+.custom-scrollbar {
+  /* Set a fixed height for the div to enable scrolling */
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #2d3748;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #4a5568;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2d3748;
+}

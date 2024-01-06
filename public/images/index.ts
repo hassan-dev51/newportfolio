@@ -18,3 +18,6 @@ export { default as pricing } from "./pricing.png";
 export { default as expense } from "./expense.png";
 export { default as covid } from "./covid.png";
 export { default as carhub } from "./carhub.png";
+export { default as hackathon } from "./hackathon.png";
+export { default as prompt } from "./prompt.png";
+export { default as intern } from "./intern.png";

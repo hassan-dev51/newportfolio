@@ -1,10 +1,12 @@
 "use client";
-import { skills } from "@/constants";
-import { useState } from "react";
-import PaginationNumber from "./PaginationNumber";
-import Image from "next/image";
 
-const Pagination = ({ currentPage, totalPages, onPageChange }: any) => {
+import Image from "next/image";
+type Props = {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (newPage: number) => void;
+};
+const Pagination = ({ currentPage, totalPages, onPageChange }: Props) => {
   return (
     <div className="flex flex-row items-center justify-center gap-4 ">
       <button

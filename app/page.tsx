@@ -1,4 +1,12 @@
-import { About, Hero, Navbar, Project, Tech, StarCanvas } from "@/components";
+import {
+  About,
+  Hero,
+  Navbar,
+  Project,
+  Tech,
+  StarCanvas,
+  Contact,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -11,6 +19,7 @@ export default function Home() {
           <About />
           <Tech />
           <Project />
+          <Contact />
         </div>
       </div>
     </>

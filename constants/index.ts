@@ -182,11 +182,12 @@ export const projects = [
     ],
   },
   {
-    id: 9,
-    image: intern,
-    githublink: "https://github.com/hassan-dev51/internship",
-    description: `Photoshop design project, a brand's visual essence translated into a seamless website. Built with simple HTML, CSS, and JavaScript, the template offers a dynamic and responsive user experience, showcasing the brand's identity through minimalistic elegance and thoughtful interactivity`,
-    url: "https://internshiptesting.netlify.app/",
+    id: 4,
+    image: expense,
+    githublink:
+      "https://github.com/hassan-dev51/Q2-Projects/tree/main/expense_app",
+    description: `Effortlessly manage daily transactions with my Next.js application designed for seamless expense tracking. Utilizing the power of Chart.js and Redux, this platform ensures a user-friendly experience, allowing you to stay organized and informed about your financial activities. Experience the convenience of daily expense tracking, tailored for practical and efficient use in your everyday life.`,
+    url: "https://expense-lite.vercel.app/",
     tags: [
       {
         id: 1,
@@ -200,8 +201,27 @@ export const projects = [
       },
       {
         id: 3,
-        framework: "MongoDB",
+        framework: "Redux",
         color: "tag-green",
+      },
+    ],
+  },
+  {
+    id: 9,
+    image: intern,
+    githublink: "https://github.com/hassan-dev51/internship",
+    description: `Photoshop design project, a brand's visual essence translated into a seamless website. Built with simple HTML, CSS, and JavaScript, the template offers a dynamic and responsive user experience, showcasing the brand's identity through minimalistic elegance and thoughtful interactivity`,
+    url: "https://internshiptesting.netlify.app/",
+    tags: [
+      {
+        id: 1,
+        framework: "HTML",
+        color: "tag-red",
+      },
+      {
+        id: 2,
+        framework: "CSS",
+        color: "tag-blue",
       },
     ],
   },
@@ -270,31 +290,6 @@ export const projects = [
       {
         id: 3,
         framework: "FramerMotion",
-        color: "tag-green",
-      },
-    ],
-  },
-  {
-    id: 4,
-    image: expense,
-    githublink:
-      "https://github.com/hassan-dev51/Q2-Projects/tree/main/expense_app",
-    description: `Effortlessly manage daily transactions with my Next.js application designed for seamless expense tracking. Utilizing the power of Chart.js and Redux, this platform ensures a user-friendly experience, allowing you to stay organized and informed about your financial activities. Experience the convenience of daily expense tracking, tailored for practical and efficient use in your everyday life.`,
-    url: "https://expense-lite.vercel.app/",
-    tags: [
-      {
-        id: 1,
-        framework: "Next JS",
-        color: "tag-red",
-      },
-      {
-        id: 2,
-        framework: "Tailwind",
-        color: "tag-blue",
-      },
-      {
-        id: 3,
-        framework: "Redux",
         color: "tag-green",
       },
     ],

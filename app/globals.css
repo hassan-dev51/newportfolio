@@ -6,6 +6,14 @@ body {
   background-color: #121417;
   color: #68696e;
 }
+
+label {
+  @apply flex flex-col gap-4;
+}
+input,
+textarea {
+  @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  outline-none focus:border-[#2493d4] focus:ring-[#2493d4];
+}
 .block-container {
   position: relative;
   transition: 250ms;
@@ -71,6 +79,9 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+.custom-scrollbar:hover::-webkit-scrollbar {
   width: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {

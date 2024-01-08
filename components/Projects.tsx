@@ -6,7 +6,7 @@ const Projects = () => {
     <MotionSection
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.5 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
       id="project"
       className="mt-16 text-[#68696e]"
     >

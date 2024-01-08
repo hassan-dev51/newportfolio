@@ -34,8 +34,8 @@ const PaginationCard = () => {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 0.5,
-        delay: index * 0.15,
+        duration: 1,
+        delay: index * 0.2,
       },
     },
   });
@@ -97,7 +97,7 @@ const PaginationCard = () => {
               >
                 View
               </Link>
-              <p className="custom-scrollbar mt-3 h-[150px] overflow-y-clip p-1 text-justify text-sm hover:overflow-y-auto">
+              <p className="custom-scrollbar mt-3 h-[150px] p-1 text-start text-sm ">
                 {currElem.description}
               </p>
 

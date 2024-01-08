@@ -134,7 +134,7 @@ export const skills = [
 
 export const projects = [
   {
-    id: 7,
+    id: 1,
     image: hackathon,
     githublink: "https://github.com/hassan-dev51/hackathon",
     description: `Explore a seamless online shopping experience with our e-commerce site, meticulously crafted for a premium brand. Powered by cutting-edge technologies, our platform is built using Next.js and Redux for optimal performance and state management. Enjoy secure transactions with integrated Stripe payment functionality`,
@@ -158,7 +158,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 2,
     image: prompt,
     githublink: "https://github.com/hassan-dev51/prompt",
     description: `Discover a vibrant online community on our Full Stack Application, providing a space for individuals to share their thoughts and experiences. Built with the power of Next.js, MongoDB for robust data storage, and styled with the sleek simplicity of Tailwind CSS`,
@@ -182,7 +182,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     image: expense,
     githublink:
       "https://github.com/hassan-dev51/Q2-Projects/tree/main/expense_app",
@@ -207,7 +207,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 4,
     image: intern,
     githublink: "https://github.com/hassan-dev51/internship",
     description: `Photoshop design project, a brand's visual essence translated into a seamless website. Built with simple HTML, CSS, and JavaScript, the template offers a dynamic and responsive user experience, showcasing the brand's identity through minimalistic elegance and thoughtful interactivity`,
@@ -226,7 +226,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 5,
     image: panaverse,
     githublink:
       "https://github.com/hassan-dev51/Assignment01_Nextjs_TodoApp/tree/main/panaverse",
@@ -246,7 +246,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     image: piaic,
     githublink: "https://github.com/hassan-dev51/piaic",
     description: `The PIAIC landing page, enriched with dynamic visual elements, is a testament to my design prowess and coding proficiency. Crafted using the Framer Motion library, the page seamlessly integrates captivating animations and transitions, enhancing the overall user experience.`,
@@ -270,7 +270,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     image: pricing,
     githublink:
       "https://github.com/hassan-dev51/Assignment01_Nextjs_TodoApp/tree/main/pricing",
@@ -295,7 +295,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     image: covid,
     githublink: "https://github.com/hassan-dev51/covid-19",
     description: `Stay informed about the current global coronavirus situation with this application, providing real-time updates on COVID-19 cases worldwide. This intuitive platform adheres to the principle of delivering accurate and up-to-date information, enabling users to stay vigilant and aware of the ongoing pandemic.`,
@@ -319,7 +319,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     image: carhub,
     githublink: "https://github.com/hassan-dev51/covid-19",
     description: `Stay informed about the current global coronavirus situation with this application, providing real-time updates on COVID-19 cases worldwide. This intuitive platform adheres to the principle of delivering accurate and up-to-date information, enabling users to stay vigilant and aware of the ongoing pandemic.`,

@@ -12,7 +12,7 @@ label {
 }
 input,
 textarea {
-  @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  outline-none focus:border-[#2493d4] focus:ring-[#2493d4];
+  @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  outline-none focus:border-[#2493d4]  focus:ring-[#2493d4];
 }
 .block-container {
   position: relative;

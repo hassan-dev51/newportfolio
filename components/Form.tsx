@@ -1,53 +1,33 @@
 "use client";
 
-import { ChangeEvent, FormEvent, useState } from "react";
-
-interface FormValues {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import { handleSubmit } from "@/utils/user.action";
+import { useRef } from "react";
+import { toast } from "sonner";
+import Button from "./Button";
 
 const Form = () => {
-  const [formValues, setFormValues] = useState<FormValues>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const hanldeChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormValues({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-  };
+  const ref = useRef<HTMLFormElement>(null);
   return (
     <div>
-      {" "}
       <form
-        action=""
+        ref={ref}
+        action={async (formData) => {
+          const result = await handleSubmit(formData);
+          if (result?.error) {
+            toast.error(result.error);
+          } else {
+            ref.current?.reset();
+            toast.success("Message Send Succussfully");
+          }
+        }}
         className="m-auto flex max-w-3xl flex-col gap-6 p-5"
-        onSubmit={handleSubmit}
       >
         <label>
           Name:
           <input
             type="text"
             name="name"
-            value={formValues.name}
-            onChange={hanldeChange}
-            autoComplete="on"
+            autoComplete="off"
             placeholder="Your Good Name!"
             required
           />
@@ -57,10 +37,8 @@ const Form = () => {
           <input
             type="email"
             name="email"
-            value={formValues.email}
-            onChange={hanldeChange}
             placeholder="Your Email!"
-            autoComplete="on"
+            autoComplete="off"
             required
           />
         </label>
@@ -69,9 +47,7 @@ const Form = () => {
           <input
             type="text"
             name="subject"
-            value={formValues.subject}
-            onChange={hanldeChange}
-            autoComplete="on"
+            autoComplete="off"
             placeholder="Subject..."
             required
           />
@@ -82,18 +58,11 @@ const Form = () => {
             name="message"
             cols={10}
             rows={10}
-            value={formValues.message}
-            onChange={hanldeChange}
             placeholder="Write your Message.."
             required
           ></textarea>
         </label>
-        <button
-          type="submit"
-          className="rounded-md bg-[#2493d4] p-3 text-[#68696e] hover:border hover:border-[#2493d4] hover:bg-transparent"
-        >
-          Send
-        </button>
+        <Button />
       </form>
     </div>
   );

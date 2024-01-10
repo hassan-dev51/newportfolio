@@ -51,7 +51,22 @@ export interface projectTypes {
   }[];
 }
 export type tags = { id: number; color: string; framework: string };
-
+export const images = [
+  {
+    id: 1,
+    image: "/images/github-icon.png",
+    alt: "github-icon",
+    url: "https://github.com/hassan-dev51",
+    title: "Github",
+  },
+  {
+    id: 2,
+    image: "/images/linkedin.png",
+    alt: "LinkedIn-icon",
+    url: "https://www.linkedin.com/in/hassan-ali-464666255/",
+    title: "LinkedIn",
+  },
+];
 export const skills = [
   {
     imageUrl: html,

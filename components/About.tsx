@@ -6,7 +6,7 @@ const About = (): React.JSX.Element => {
       <TypingText />
 
       <div className="flex py-8">
-        <p className="py-8 text-justify text-[16px] text-[#68696e] md:text-xl">
+        <p className="paragraph-text">
           I am{" "}
           <span className="font-bold text-[#2493d4]">Web Apps Developer</span>{" "}
           having a special interest in Frontend technologies, and expertise in

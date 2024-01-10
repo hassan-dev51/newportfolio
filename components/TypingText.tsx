@@ -24,7 +24,7 @@ const Text = ({ title }: Props) => (
           },
         }}
         key={index}
-        className="text-2xl font-bold text-[#68696E] md:text-4xl"
+        className="head-text"
       >
         {letter === " " ? "\u00A0" : letter}
       </motion.span>

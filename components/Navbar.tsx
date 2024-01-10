@@ -21,6 +21,7 @@ const Navbar = (): React.JSX.Element => {
     window.addEventListener("scroll", changeBackground);
   }, []);
 
+  const links = ["home", "about", "project", "contact"];
   return (
     <>
       <nav
@@ -39,10 +40,11 @@ const Navbar = (): React.JSX.Element => {
 
         <ul className={`mr-8`}>
           <li className="hidden space-x-5 font-semibold uppercase text-[#68696e] md:flex">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
+            {links.map((link) => (
+              <a key={link} href={`#${link}`} className="capitalize">
+                {link}
+              </a>
+            ))}
           </li>
           <Image
             src={"/images/menu.svg"}
@@ -75,10 +77,11 @@ const Navbar = (): React.JSX.Element => {
                 />
               </div>
               <li className="flex flex-col gap-12 font-semibold uppercase text-[#68696e] md:hidden">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
+                {links.map((link) => (
+                  <a key={link} href={`#${link}`} className="capitalize">
+                    {link}
+                  </a>
+                ))}
               </li>
             </ul>
           </MotionDiv>

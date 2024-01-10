@@ -17,6 +17,15 @@ input,
 textarea {
   @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  text-white outline-none  focus:border-[#2493d4] focus:ring-[#2493d4];
 }
+.paragraph-text {
+  @apply py-8 text-justify text-[16px] text-[#68696e] md:text-xl;
+}
+.head-text {
+  @apply text-2xl font-bold text-[#68696E] md:text-4xl;
+}
+.flex-rounded {
+  @apply flex items-center justify-center rounded-xl;
+}
 .block-container {
   position: relative;
   transition: 250ms;
@@ -71,10 +80,7 @@ textarea {
 .tag-green {
   color: green;
 }
-/* Your regular Tailwind CSS styles go here */
-
 .custom-scrollbar {
-  /* Set a fixed height for the div to enable scrolling */
   max-height: 300px;
   overflow-y: auto;
   scrollbar-width: thin;

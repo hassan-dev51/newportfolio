@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
         <SocialLinks />
         <StarCanvas />
-        <div className="px-14">
+        <div className="px-16">
           <About />
           <Tech />
           <Project />

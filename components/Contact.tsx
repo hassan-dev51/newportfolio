@@ -4,13 +4,14 @@ import { MotionSection } from "./MotionSection";
 const Contact = () => {
   return (
     <MotionSection
-      initial={{ opacity: 0, y: -100 }}
+      initial={{ opacity: 0, y: -200 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1, ease: "backInOut", duration: 0.6 }}
+      transition={{ delay: 1, ease: "backInOut", duration: 1 }}
+      viewport={{ once: false }}
       id="contact"
       className="my-12"
     >
-      <h2 className="text-center font-bold text-[2xl] md:text-4xl">
+      <h2 className="head-text text-center">
         Innovation Starts with a Conversation Reach Out!
       </h2>
       <div>

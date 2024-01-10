@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hassan Ali | Portfolio",
   description:
-    "i am full stack next js developer. i build custom and business type web application using typescript and modren trends",
+    "I am a passionate web developer specializing in Next.js, with a robust skill set encompassing HTML, CSS, Tailwind CSS, JavaScript, TypeScript, and React.js. My expertise extends to version control systems like Git, and I possess a foundational understanding of Node.js frameworks, particularly Express.js. Explore my portfolio for innovative web solutions crafted with precision and creativity.",
 };
 
 export default function RootLayout({

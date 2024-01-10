@@ -1,8 +1,11 @@
 1 make the navbar responsive => done
 2 give the percentage to each skill => done
-3 Add social links and fixed there position
-4 add some anitmation in contact form
-5 give meaning full style to the contact section.
+3 Add social links and fixed there position => done
+4 add some anitmation in contact form => done
+5 give meaning full style to the contact section. => done
+
+11-01-2024
+
 6 refactor code where needed
 7 add active state in navbar link
 8 add nodemailer in backend

@@ -23,12 +23,6 @@ const Navbar = (): React.JSX.Element => {
 
   return (
     <>
-      <div
-        className={`fixed top-0 z-0 h-screen w-full ${
-          toggle ? "bg-black/50 backdrop-blur-md" : ""
-        }`}
-        onClick={() => setToggle(false)}
-      ></div>
       <nav
         className={`fixed top-0 z-10 flex w-full max-w-[1440px] items-center justify-between transition-all ease-in-out ${
           navColor && `bg-black/70`
@@ -67,17 +61,17 @@ const Navbar = (): React.JSX.Element => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ x: 100, opacity: 0 }}
             transition={{ ease: "easeInOut", duration: 0.6 }}
-            className="fixed right-0 top-0 z-10 flex h-screen w-[300px] flex-col bg-black"
+            className="fixed right-0 top-0 z-10 flex h-screen w-full flex-col items-end bg-black/50"
+            onClick={() => setToggle(!toggle)}
           >
-            <ul className={`p-3`}>
+            <ul className={`h-screen w-[300px] bg-black p-3`}>
               <div className="m-6 flex justify-end">
                 <Image
                   src={"/images/close.svg"}
                   alt="menu-icon"
                   width={18}
                   height={18}
-                  className=" md:hidden"
-                  onClick={() => setToggle(!toggle)}
+                  className="md:hidden"
                 />
               </div>
               <li className="flex flex-col gap-12 font-semibold uppercase text-[#68696e] md:hidden">

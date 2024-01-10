@@ -95,3 +95,12 @@ textarea {
   border-radius: 10px;
   background-color: #2d3748;
 }
+.gmail {
+  color: rgb(216, 46, 46);
+}
+.facebook {
+  color: #3b5998;
+}
+.twitter {
+  color: #55acee;
+}

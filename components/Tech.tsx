@@ -3,7 +3,9 @@ import Image from "next/image";
 const Tech = () => {
   return (
     <section id="tect">
-      <h2 className="text-4xl font-bold text-[#68696E]">My Skills</h2>
+      <h2 className="text-2xl font-bold text-[#68696E] md:text-4xl">
+        My Skills
+      </h2>
       <div className="my-16 flex flex-wrap justify-center gap-12">
         {skills.map((skill: skillTypes) => (
           <div

@@ -7,6 +7,7 @@ import {
   StarCanvas,
   Contact,
   SocialLinks,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -17,11 +18,12 @@ export default function Home() {
         <Hero />
         <SocialLinks />
         <StarCanvas />
-        <div className="px-12">
+        <div className="px-14">
           <About />
           <Tech />
           <Project />
           <Contact />
+          <Footer />
         </div>
       </div>
     </>

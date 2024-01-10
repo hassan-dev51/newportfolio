@@ -18,7 +18,7 @@ const Hero = () => {
         }}
         viewport={{ once: false }}
       >
-        <p className="flex flex-col gap-6 pb-9 text-2xl leading-10 tracking-wide">
+        <p className="flex flex-col pb-9 text-[18px] leading-10 tracking-wide md:gap-6 md:text-2xl">
           Hi 👋 I am <span className="text-4xl text-[#2493d4]">Hassan Ali</span>
           Modren Web Developer
         </p>

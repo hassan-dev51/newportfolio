@@ -3,7 +3,7 @@ import { IconComponent, socialLinks } from "@/constants";
 
 const SocialLinks = () => {
   return (
-    <div className="fixed top-36 z-10 mx-auto max-w-[1440px]">
+    <div className="-z-1 fixed top-36 mx-auto max-w-[1440px]">
       <div className="flex flex-col justify-center gap-8 p-4">
         {socialLinks.map((link) => {
           const IconObj = IconComponent[link.icon];
@@ -15,9 +15,14 @@ const SocialLinks = () => {
                 key={link.id}
                 href={link.url}
                 title={link.title}
-                className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 p-2"
+                className="rounded-full bg-gradient-to-r from-[#434343] to-[#000000] p-2"
               >
-                {IconObj && <IconObj className="text-[22px]" key={link.icon} />}
+                {IconObj && (
+                  <IconObj
+                    className={`${link.className} text-[16px] md:text-[22px]`}
+                    key={link.icon}
+                  />
+                )}
               </Link>
             );
           }

@@ -24,6 +24,14 @@ import {
   typescript,
 } from "@/public/images";
 import { StaticImageData } from "next/image";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { IconType } from "react-icons";
+import { SiGmail } from "react-icons/si";
 export interface skillTypes {
   imageUrl: StaticImageData;
   name: string;
@@ -49,49 +57,49 @@ export const skills = [
     imageUrl: html,
     name: "HTML",
     type: "Frontend",
-    skill: "30",
+    skill: "80",
   },
   {
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
-    skill: "30",
+    skill: "70",
   },
   {
     imageUrl: tailwind,
     name: "CSS framework",
     type: "Frontend",
-    skill: "30",
+    skill: "70",
   },
   {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
-    skill: "30",
+    skill: "60",
   },
   {
     imageUrl: typescript,
     name: "typeScript",
     type: "Frontend",
-    skill: "30",
+    skill: "60",
   },
   {
     imageUrl: python,
     name: "python",
     type: "Frontend",
-    skill: "30",
+    skill: "50",
   },
   {
     imageUrl: react,
     name: "reactjs",
     type: "Framework",
-    skill: "30",
+    skill: "60",
   },
   {
     imageUrl: nextjs,
     name: "nextjs",
     type: "Framework",
-    skill: "30",
+    skill: "60",
   },
   {
     imageUrl: flask,
@@ -103,32 +111,32 @@ export const skills = [
     imageUrl: redux,
     name: "reduxjs",
     type: "statemanagement",
-    skill: "30",
+    skill: "50",
   },
   {
     imageUrl: nodejs,
     name: "nodejs",
     type: "runtime",
-    skill: "30",
+    skill: "50",
   },
   {
     imageUrl: git,
     name: "GitHub",
     type: "Version Control",
-    skill: "30",
+    skill: "70",
   },
   {
     imageUrl: docker,
     name: "Containerize",
     type: "Deployement",
-    skill: "30",
+    skill: "40",
   },
 
   {
     imageUrl: mongodb,
     name: "MongoDB",
     type: "Database",
-    skill: "30",
+    skill: "40",
   },
 ];
 
@@ -343,3 +351,50 @@ export const projects = [
     ],
   },
 ];
+export const socialLinks = [
+  {
+    id: 1,
+    url: "https://www.instagram.com/hassan.ali7887/",
+    icon: "AiFillInstagram",
+    title: "Instagram",
+    className: "",
+  },
+  {
+    id: 2,
+    url: "https://twitter.com/hassanalimunir",
+    icon: "AiOutlineTwitter",
+    title: "Twitter",
+    className: "",
+  },
+  {
+    id: 3,
+    url: "https://www.facebook.com/profile.php?id=100008762237511",
+    icon: "AiFillFacebook",
+    title: "Facebook",
+    className: "",
+  },
+  {
+    id: 4,
+    url: "mailto:hassanmunir363@gmail.com",
+    icon: "SiGmail",
+    title: "Gmail",
+    className: "",
+  },
+  {
+    id: 5,
+    url: "https://www.linkedin.com/in/hassan-ali-464666255/",
+    icon: "AiFillLinkedin",
+    title: "LinkedIn",
+    className: "",
+  },
+];
+
+export const IconComponent: {
+  [key: string]: React.FC<{ className?: string }>;
+} = {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+  SiGmail,
+};

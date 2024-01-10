@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #121417;
   color: #68696e;
@@ -12,7 +15,7 @@ label {
 }
 input,
 textarea {
-  @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  outline-none focus:border-[#2493d4]  focus:ring-[#2493d4];
+  @apply block w-full rounded-lg border border-[#68696e] bg-[#121417] p-3 text-sm  text-white outline-none  focus:border-[#2493d4] focus:ring-[#2493d4];
 }
 .block-container {
   position: relative;
@@ -85,8 +88,10 @@ textarea {
   width: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
   background-color: #4a5568;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
   background-color: #2d3748;
 }

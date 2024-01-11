@@ -1,8 +1,8 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { connectDB } from "./connection";
 import schema from "./models/formSchema";
+import { sendEmail } from "./nodemailer";
 
 export const handleSubmit = async (formData: FormData) => {
   const rawData = {
@@ -12,17 +12,27 @@ export const handleSubmit = async (formData: FormData) => {
     message: formData.get("message"),
   };
   await connectDB();
+
   try {
+    const { email, message, name, subject } = rawData;
     await schema.create({
-      name: rawData.name,
-      email: rawData.email,
-      subject: rawData.subject,
-      message: rawData.message,
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
     });
+    await sendEmail({
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    });
+    return {
+      message: "Message Send Succussfully",
+    };
   } catch (error) {
     return {
       error: "Internal Server Error! Message Sending Failed",
     };
   }
-  revalidatePath("/");
 };

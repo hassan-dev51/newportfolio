@@ -15,9 +15,11 @@ const Form = () => {
           const result = await handleSubmit(formData);
           if (result?.error) {
             toast.error(result.error);
-          } else {
+          } else if (result?.message) {
             ref.current?.reset();
-            toast.success("Message Send Succussfully");
+            toast.success(result.message);
+          } else {
+            toast.info("Unable to send message..");
           }
         }}
         className="m-auto flex max-w-3xl flex-col gap-6 p-5"

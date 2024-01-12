@@ -30,7 +30,6 @@ import {
   AiFillLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import { IconType } from "react-icons";
 import { SiGmail } from "react-icons/si";
 export interface skillTypes {
   imageUrl: StaticImageData;
@@ -63,7 +62,7 @@ export const images = [
     id: 2,
     image: "/images/linkedin.png",
     alt: "LinkedIn-icon",
-    url: "https://www.linkedin.com/in/hassan-ali-464666255/",
+    url: "https://www.linkedin.com/in/hassanalidev/",
     title: "LinkedIn",
   },
 ];
@@ -394,13 +393,6 @@ export const socialLinks = [
     icon: "SiGmail",
     title: "Gmail",
     className: "gmail",
-  },
-  {
-    id: 5,
-    url: "https://www.linkedin.com/in/hassan-ali-464666255/",
-    icon: "AiFillLinkedin",
-    title: "LinkedIn",
-    className: "twitter",
   },
 ];
 
